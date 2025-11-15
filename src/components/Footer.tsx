@@ -71,7 +71,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-t from-primary/8 via-background/6 to-transparent dark:from-slate-900/85 dark:via-slate-800/60 dark:to-slate-800/50 text-primary-foreground py-12 backdrop-blur-sm">
+    <footer className="bg-gradient-to-t from-slate-500/85 via-slate-400/70 to-slate-300/40 dark:from-slate-900/78 dark:via-slate-800/44 dark:to-transparent text-primary-foreground py-12 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-8">
           <div>
@@ -118,7 +118,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-primary-foreground/12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/60 text-sm">
             © 2025 Frankline. All rights reserved.
           </p>
@@ -126,19 +126,19 @@ const Footer = () => {
           <div className="flex gap-4">
             <a
               href="#"
-              className="bg-primary-foreground/10 p-2 rounded-full hover:bg-accent hover:text-accent-foreground transition-colors"
+              className="bg-primary-foreground/6 p-2 rounded-full hover:bg-accent/10 hover:text-accent-foreground transition-colors"
             >
               <Linkedin size={20} />
             </a>
             <a
               href="#"
-              className="bg-primary-foreground/10 p-2 rounded-full hover:bg-accent hover:text-accent-foreground transition-colors"
+              className="bg-primary-foreground/6 p-2 rounded-full hover:bg-accent/10 hover:text-accent-foreground transition-colors"
             >
               <Github size={20} />
             </a>
             <a
               href="#"
-              className="bg-primary-foreground/10 p-2 rounded-full hover:bg-accent hover:text-accent-foreground transition-colors"
+              className="bg-primary-foreground/6 p-2 rounded-full hover:bg-accent/10 hover:text-accent-foreground transition-colors"
             >
               <Twitter size={20} />
             </a>

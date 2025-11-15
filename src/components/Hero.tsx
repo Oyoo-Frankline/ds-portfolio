@@ -20,6 +20,11 @@ const Hero = () => {
       {/* Overlay gradient for better text contrast */}
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-primary/40 via-primary/20 to-background/80" />
 
+      {/* subtle floating accent */}
+      <div className="absolute -right-6 top-20 z-20">
+        <div className="w-14 h-14 rounded-full bg-accent/20 dark:bg-accent/30 backdrop-blur-sm animate-float" />
+      </div>
+
       <div className="container mx-auto max-w-7xl px-6 lg:px-8 z-10 text-center">
         <h2 className="text-2xl md:text-3xl font-semibold text-primary-foreground mb-4 animate-fade-in">
           I am Frankline
