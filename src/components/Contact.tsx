@@ -85,7 +85,7 @@ const Contact = () => {
                       href="mailto:oyoofrankline@gmail.com"
                       className="text-muted-foreground hover:text-accent"
                     >
-                      oyoofrankline@gmail.com
+                      oyoofrankline30@gmail.com
                     </a>
                   </div>
                 </CardContent>

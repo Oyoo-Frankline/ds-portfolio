@@ -71,7 +71,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="bg-gradient-to-t from-primary/8 via-background/6 to-transparent dark:from-slate-900/85 dark:via-slate-800/60 dark:to-slate-800/50 text-primary-foreground py-12 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-8">
           <div>
