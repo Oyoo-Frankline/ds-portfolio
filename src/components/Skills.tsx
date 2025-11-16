@@ -14,6 +14,13 @@ import pandasImg from "@/assets/icons/icons8-pandas-48.png";
 import pytorchImg from "@/assets/icons/icons8-pytorch-64.png";
 import tableauImg from "@/assets/icons/icons8-tableau-software-48.png";
 import tensorflowImg from "@/assets/icons/icons8-tensorflow-48.png";
+import vscodeImg from "@/assets/icons/vs code.png";
+import scikitlearnImg from "@/assets/icons/scikit learn.webp";
+import seabornImg from "@/assets/icons/seaborn.png";
+import algorithmImg from "@/assets/icons/algorithm.png";
+import dockerImg from "@/assets/icons/docker.png";
+import datastructuresImg from "@/assets/icons/data structures.png";
+import mongodbImg from "@/assets/icons/mongo db.png";
 
 const Skills = () => {
   const categories = [
@@ -27,8 +34,8 @@ const Skills = () => {
     {
       title: "Computer Science Fundamentals",
       items: [
-        { name: "Data Structures" },
-        { name: "Algorithms" },
+        { name: "Data Structures", icon: datastructuresImg },
+        { name: "Algorithms", icon: algorithmImg },
         { name: "Complexity Analysis (Big-O)" },
         { name: "Problem Solving" },
         { name: "System Design" },
@@ -39,9 +46,8 @@ const Skills = () => {
       items: [
         { name: "Anaconda / Conda", icon: anacondaImg },
         { name: "Jupyter Notebook / Lab", icon: jupyterImg },
-        { name: "VS Code" },
-        { name: "Docker" },
-        { name: "virtualenv / pip" },
+        { name: "VS Code", icon: vscodeImg },
+        { name: "Docker", icon: dockerImg },
       ],
     },
     {
@@ -54,7 +60,7 @@ const Skills = () => {
     {
       title: "Machine Learning",
       items: [
-        { name: "scikit-learn" },
+        { name: "scikit-learn", icon: scikitlearnImg },
         { name: "TensorFlow", icon: tensorflowImg },
         { name: "PyTorch", icon: pytorchImg },
         { name: "Keras" },
@@ -64,9 +70,8 @@ const Skills = () => {
       title: "Data Visualization",
       items: [
         { name: "matplotlib", icon: matplotlibImg },
-        { name: "seaborn" },
+        { name: "seaborn", icon: seabornImg },
         { name: "Plotly" },
-        { name: "ggplot2" },
         { name: "Microsoft Excel", icon: excelImg },
         { name: "Power BI", icon: powerbiImg },
         { name: "Tableau", icon: tableauImg },
@@ -78,7 +83,10 @@ const Skills = () => {
     },
     {
       title: "Databases",
-      items: [{ name: "MySQL", icon: mysqlImg }],
+      items: [
+        { name: "MySQL", icon: mysqlImg },
+        { name: "MongoDB", icon: mongodbImg },
+      ],
     },
     {
       title: "Version Control",

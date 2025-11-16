@@ -1,7 +1,29 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-data.jpg";
+import { useEffect, useState } from "react";
+
+const useTypeWriter = (text: string, speed: number = 50) => {
+  const [displayedText, setDisplayedText] = useState("");
+  const [isComplete, setIsComplete] = useState(false);
+
+  useEffect(() => {
+    if (displayedText.length < text.length) {
+      const timer = setTimeout(() => {
+        setDisplayedText(text.slice(0, displayedText.length + 1));
+      }, speed);
+      return () => clearTimeout(timer);
+    } else {
+      setIsComplete(true);
+    }
+  }, [displayedText, text, speed]);
+
+  return { displayedText, isComplete };
+};
 
 const Hero = () => {
+  const descriptionText =
+    "Transforming raw data into actionable insights through advanced analytics, visualization, and machine learning";
+  const { displayedText, isComplete } = useTypeWriter(descriptionText, 40);
   return (
     <section
       id="home"
@@ -36,11 +58,17 @@ const Hero = () => {
           Data Analyst & Scientist
         </h1>
         <p
-          className="text-lg md:text-xl text-primary-foreground/90 max-w-3xl mx-auto mb-8 animate-fade-in delay-200"
+          className="text-lg md:text-xl text-primary-foreground/90 max-w-3xl mx-auto mb-8 animate-fade-in delay-200 min-h-20"
           style={{ animationDelay: "260ms" }}
         >
-          Transforming raw data into actionable insights through advanced
-          analytics, visualization, and machine learning
+          {displayedText}
+          <span
+            className={`${
+              isComplete ? "hidden" : "inline-block"
+            } ml-1 animate-pulse`}
+          >
+            |
+          </span>
         </p>
         <div className="flex gap-4 justify-center">
           <Button
@@ -53,7 +81,7 @@ const Hero = () => {
           <Button
             size="lg"
             variant="outline"
-            className="border-primary-foreground text-black hover:bg-accent hover:text-accent-foreground animate-fade-in"
+            className="border-primary-foreground text-primary-foreground hover:bg-accent hover:text-accent-foreground animate-fade-in dark:text-white"
             style={{ animationDelay: "420ms" }}
           >
             <a href="#contact">Contact</a>

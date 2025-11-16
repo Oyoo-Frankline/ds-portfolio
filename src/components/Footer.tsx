@@ -36,7 +36,7 @@ const WhatsAppWidget = ({ phone }: { phone: string }) => {
       <button
         onClick={() => setOpen((s) => !s)}
         aria-label="Chat on WhatsApp"
-        className="w-14 h-14 rounded-full bg-green-600 hover:bg-green-700 shadow-lg flex items-center justify-center text-white"
+        className="w-10 h-10 rounded-full bg-green-600 hover:bg-green-700 shadow-lg flex items-center justify-center text-white"
         title="WhatsApp"
       >
         {/* WhatsApp SVG icon */}
